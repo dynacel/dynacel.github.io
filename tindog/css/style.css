@@ -1,0 +1,171 @@
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --primary-color: #ff4c68;
+    --secondary-color: #ef8172;
+    --black: #000;
+    --white: #fff;
+    --gray: #8f8f8f;
+}
+
+body {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media (max-width:900px) {
+    h1 {
+        font-size: 8vw;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a{
+    color: var(--primary-color);
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+.btn {
+    margin: .5rem;
+}
+
+.card {
+    margin: .5rem;
+}
+
+.container-fluid {
+    padding: 5% 15%;
+}
+
+#navbar {
+    padding: 0% 15%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand {
+    color: transparent;
+    text-shadow: 0 0 0 var(--white);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+#title {
+    padding-top: 75px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media (min-width: 1000px) {
+
+    #title div {
+        text-align: left;
+        position: relative;
+    }
+}
+
+#title-img {
+    transform: rotate(25deg);
+    position: absolute;
+    width: 60%;
+    right: 10%;
+}
+
+@media (max-width: 1000px) {
+    #title-img {
+        transform: rotate(0);
+        position: relative;
+        right: 0%;
+        width: 60%;
+        padding-top: .5rem;
+    }
+}
+
+#features {
+    background-color: var(--white);
+    position: relative;
+}
+
+#features [class^='col-'] {
+    padding: 2% 3% 0;
+}
+
+#features p {
+    color: var(--gray);
+}
+
+#features .icon {
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin: 1rem 0;
+}
+
+#features .icon:hover {
+    color: var(--primary-color);
+}
+
+#testimonials {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    position: relative;
+}
+
+#testimonials .container-fluid {
+    padding-bottom: 0;
+}
+
+#testimonials img {
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}
+
+#press .container-fluid {
+    padding-top: 0%;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+#press img {
+    height: 50px;
+    margin: 20px;
+}
+
+#cta {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#footer {
+    padding-bottom: 0%;
+}
+
+#footer .social {
+    letter-spacing: 10px;
+}
